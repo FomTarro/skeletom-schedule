@@ -1,6 +1,7 @@
+
+const week = document.getElementById('week').innerHTML = SCHEDULE.week;
 const parent = document.getElementById('parent');
 parent.innerHTML ='';
-
 var offset = 0;
 for(var item of SCHEDULE.events){
     const outer = document.createElement('div');
@@ -28,7 +29,7 @@ for(var item of SCHEDULE.events){
     image.classList.add('event-image');
     image.src = item.img;
     outer.appendChild(image);
-    outer.style.marginLeft = `100%`
+    outer.style.marginLeft = `${4*offset}em`
     offset++;
     parent.appendChild(outer);
 }
