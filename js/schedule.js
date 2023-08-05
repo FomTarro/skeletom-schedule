@@ -25,12 +25,24 @@ const SCHEDULE = {
             date: "Wednesday, August 9th @ 12PM ET",
             title: "Let's Enjoy Dolphin Summer!",
             subtitle: "Mystery collab! With who, I wonder? You'll just have to tune in <span class='highlight'>AND FIND OUT!</span>",
+            img: "./img/sub4.jpg"
+        },
+        {
+            date: "Thursday, August 10th 2023 @ 8PM ET",
+            title: "Let's Watch POKEMON WORLDS 2023!",
+            subtitle: "Kicking off a whole weekend of commentary with <span class='highlight'>Professor Tiberius</span> and <span class='highlight'>Lass PiaPiUFO</span>!",
             img: "./img/tork.png"
         },
         {
-            date: "Thursday, August 10th 2023 @ 8PM ET - Sunday August 13th @ 2AM EST",
-            title: "Let's SHOUTCAST POKEMON WORLDS 2023!",
+            date: "Friday, August 11th 2023 @ 8PM ET",
+            title: "Let's Watch POKEMON WORLDS 2023!",
             subtitle: "So you want to be a master? Of Pokemon? Do you have the skills to be <span class='highlight'>NUMBER ONE?</span>",
+            img: "./img/tork.png"
+        },
+        {
+            date: "Sunday, August 13th 2023 @ 12AM ET",
+            title: "Let's Watch POKEMON WORLDS 2023!",
+            subtitle: "Tune in for the VGC <span class='highlight'>grand finals</span> and see who comes out on top!",
             img: "./img/tork.png"
         },
     ]
