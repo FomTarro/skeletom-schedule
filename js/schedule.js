@@ -32,6 +32,6 @@ const SCHEDULE = {
             title: "Let's SHOUTCAST POKEMON WORLDS 2023!",
             subtitle: "So you want to be a master? Of Pokemon? Do you have the skills to be <span class='highlight'>NUMBER ONE?</span>",
             img: "./img/tork.png"
-        }
+        },
     ]
 }

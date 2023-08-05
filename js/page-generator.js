@@ -1,7 +1,7 @@
 
 const week = document.getElementById('week').innerHTML = SCHEDULE.week;
-const parent = document.getElementById('parent');
-parent.innerHTML ='';
+const container = document.getElementById('parent');
+container.innerHTML ='';
 var offset = 0;
 for(var item of SCHEDULE.events){
     const outer = document.createElement('div');
@@ -29,7 +29,9 @@ for(var item of SCHEDULE.events){
     image.classList.add('event-image');
     image.src = item.img;
     outer.appendChild(image);
-    outer.style.marginLeft = `${4*offset}em`
+    outer.style.marginLeft = `${7*offset}vmax`
     offset++;
-    parent.appendChild(outer);
+    container.appendChild(outer);
 }
+
+container.style.fontSize = `${2.5/offset}em`;

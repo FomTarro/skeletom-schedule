@@ -65,8 +65,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 2em;
+    align-content: flex-start;
+
 }
 
 .item {
@@ -78,6 +80,7 @@ body {
 
 .schedule {
     box-sizing: border-box;
+    margin-top: 1em;
     position: relative;
     display: flex;
     width: 85%;
@@ -87,15 +90,15 @@ body {
 .sub-item {
     padding: 0.75em 1.5em;
     position: absolute;
-    bottom: 80%;
-    left: -10%;
-    height: 1rem;
+    top: -1em;
+    left: -3em;
+    height: 1em;
     width: fit-content;
     font-style: italic;
 }
 
 .event {
-    padding-top: 1rem;
+    padding-top: 1em;
     position: relative;
     justify-content: flex-start;
     align-items: flex-start;
@@ -112,6 +115,11 @@ body {
 }
 
 .header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     height: 2.5em;
     color: black;
     font-weight: 200;
@@ -130,7 +138,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     justify-content: center;
     align-items: center;
 }
@@ -154,7 +162,7 @@ body {
 }
 
 .font-large{
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .font-medium {
