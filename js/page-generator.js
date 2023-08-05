@@ -19,19 +19,24 @@ for(var item of SCHEDULE.events){
     title.classList.add('font-medium');
     title.innerHTML = item.title;
     const subtitle = document.createElement('div');
-    subtitle.classList.add('subtitle', 'font-small');
+    subtitle.classList.add('subtitle', 'font-tiny');
     subtitle.innerHTML = item.subtitle;
     titleContainer.appendChild(title);
     titleContainer.appendChild(subtitle);
     outer.appendChild(titleContainer);
 
-    const image = document.createElement('img');
-    image.classList.add('event-image');
-    image.src = item.img;
-    outer.appendChild(image);
-    outer.style.marginLeft = `${7*offset}vmax`
+    var imageOffset = 0;
+    for(var url of item.images){
+        const image = document.createElement('img');
+        image.classList.add('event-image');
+        image.src = url;
+        image.style.right = `${4*imageOffset}em`;
+        imageOffset++;
+        outer.appendChild(image);
+    }
+    outer.style.marginLeft = `${1.5*(offset)}vw`
     offset++;
     container.appendChild(outer);
 }
 
-container.style.fontSize = `${2.5/offset}em`;
+container.style.fontSize = `${2/offset}em`;
