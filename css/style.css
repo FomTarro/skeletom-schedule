@@ -86,7 +86,7 @@ body {
     margin-top: 1em;
     position: relative;
     display: flex;
-    width: 50vw;
+    width: min(55vw, 50em);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .event {
-    padding-top: 1em;
+    padding-top: 1.5em;
     position: relative;
     justify-content: flex-start;
     align-items: flex-start;
@@ -174,11 +174,11 @@ body {
 }
 
 .font-medium {
-    font-size: 1.7em;
+    font-size: 2em;
 }
 
 .font-small{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .font-tiny{

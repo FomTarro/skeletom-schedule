@@ -34,7 +34,7 @@ for(var item of SCHEDULE.events){
         imageOffset++;
         outer.appendChild(image);
     }
-    outer.style.marginLeft = `${1.5*(offset)}vw`
+    outer.style.marginLeft = `${3*(offset)}vw`
     offset++;
     container.appendChild(outer);
 }
