@@ -1,5 +1,13 @@
+/**
+ * 
+ * @param {string} str 
+ * @returns {string}
+ */
+function sanitize(str){
+    return str.replaceAll('é', '&eacute;')
+}
 
-const week = document.getElementById('week').innerHTML = SCHEDULE.week;
+const week = document.getElementById('week').innerHTML = `(${sanitize(SCHEDULE.week)})`;
 const container = document.getElementById('parent');
 container.innerHTML ='';
 var offset = 0;
@@ -12,15 +20,15 @@ for(var item of SCHEDULE.events){
         "font-small", 
         "darker");
         outer.appendChild(date);
-        date.innerHTML = item.date;
+        date.innerHTML = sanitize(item.date);
     const titleContainer = document.createElement('div');
     titleContainer.classList.add('event', 'column');
     const title = document.createElement('div');
     title.classList.add('font-medium');
-    title.innerHTML = item.title;
+    title.innerHTML = sanitize(item.title);
     const subtitle = document.createElement('div');
     subtitle.classList.add('subtitle', 'font-tiny');
-    subtitle.innerHTML = item.subtitle;
+    subtitle.innerHTML = sanitize(item.subtitle);
     titleContainer.appendChild(title);
     titleContainer.appendChild(subtitle);
     outer.appendChild(titleContainer);

@@ -28,12 +28,18 @@ html {
     color: white;
     font-family: 'dustismo_romanregular';
     font-size: 3vmin;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 body {
-    margin: 1em;
+    margin: 0;
+    padding: 1em;
+    backdrop-filter: blur(1vmin);
     animation: anim-scroll 16s linear infinite;
-    background: conic-gradient(#FEB3D0 25%, #F2C5D9 0 50%, #F0F2F1 0 75%, #F0DAE6 0) 0 0/100px 100px;
+    background: conic-gradient(#FEB3D0 25%, #F2C5D9 0 50%, #F0F2F1 0 75%, #F0DAE6 0) 0 0/20vmin 20vmin;
+    overflow: hiddentr;
 }
 
 .highlight {
@@ -54,9 +60,9 @@ body {
 
 .container {
     height: 100%;
-    display: flex;
+    /* display: flex; */
     /* margin: 2em; */
-    /* width: 85%; */
+    width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
@@ -70,8 +76,13 @@ body {
     align-items: flex-start;
     /* gap: 2.5em; */
     align-content: flex-start;
+}
 
-
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .item {
@@ -132,6 +143,10 @@ body {
     font-style: italic;
 }
 
+#week {
+    margin-left: 0.5em
+}
+
 .title{
     font-family: 'dustismo_romanbold_italic';
 }
@@ -151,7 +166,38 @@ body {
     /* align-items: center; */
 }
 
+.twitch-item{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+}
 
+.twitch{
+    height: 64px;
+    width: 64px;
+    margin-right: 1em;
+}
+
+.tree{
+    position: absolute;
+    height: 15em;
+    width: auto;
+    z-index: 5;
+}
+
+#tree1{
+    transform: rotate(45deg);
+    left: -5em;
+    bottom: -8em;
+}
+
+#tree2{
+    transform: rotate(225deg);
+    right: -5em;
+    top: -8em;
+}
 
 .highlight {
     color: #EBE563;
@@ -170,11 +216,11 @@ body {
 }
 
 .font-large{
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 .font-medium {
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .font-small{
@@ -187,5 +233,5 @@ body {
 
 @keyframes anim-scroll {
     0% { background-position: 0px 0px; }
-    100% { background-position: -400px -400px; }
+    100% { background-position: -80vmin -80vmin; }
 }

@@ -29,21 +29,21 @@ const SCHEDULE = {
         },
         {
             date: "Thursday, August 10th 2023 @ 8PM ET",
-            title: "Let's Watch POKEMON WORLDS 2023!",
-            subtitle: "Kicking off a whole weekend of commentary with <span class='highlight'>Professor Tiberius</span> and <span class='highlight'>Lass PiaPiUFO</span>!",
-            images: ["./img/tork.png"]
+            title: "Let's Watch POKéMON WORLDS!",
+            subtitle: "Kicking off a <span class='highlight'>whole weekend</span> of late-night commentary<br>with <span class='highlight'>Professor Tiberius</span> and <span class='highlight'>Lass PiaPiUFO</span>!",
+            images: ["./img/worlds.png", "./img/piapiufo_cropped.png", "./img/tiberius_cropped.png",]
         },
         {
             date: "Friday, August 11th 2023 @ 8PM ET",
-            title: "Let's Watch POKEMON WORLDS 2023!",
-            subtitle: "So you want to be a master? Of Pokemon? Do you have the skills to be <span class='highlight'>NUMBER ONE?</span>",
-            images: ["./img/tork.png"]
+            title: "Let's Watch POKéMON WORLDS!",
+            subtitle: "Continuing our coverage of POKéMON WORLDS 2023 with <span class='highlight'>Day 2 of Swiss</span>!<br>Who will make it to the <span class='highlight'>Grand Finals</span>?",
+            images: ["./img/worlds.png"]
         },
         {
             date: "Sunday, August 13th 2023 @ 12AM ET",
-            title: "Let's Watch POKEMON WORLDS 2023!",
-            subtitle: "Tune in for the VGC <span class='highlight'>grand finals</span> and see who comes out on top!",
-            images: ["./img/tork.png"]
+            title: "Let's Watch POKéMON WORLDS!",
+            subtitle: "It's time to find out who the world's <span class='highlight'>POKéMON MASTER</span> truly is!",
+            images: ["./img/worlds.png", "./img/trophy.png"]
         },
     ]
 }
