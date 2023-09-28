@@ -19,31 +19,19 @@
 * @type {Schedule}
 */
 const SCHEDULE = {
-    week: "Aug 7th - Aug 13th",
+    week: "Aug 28st - Sept 2nd",
     events: [
         {
-            date: "Wednesday, August 9th @ 12PM ET",
-            title: "Let's Enjoy Dolphin Summer!",
-            subtitle: "Collaboration with <span class='highlight'>MC</span> over on her channel, <span class='highlight'>twitch.tv/millennium_cyborg</span>!",
-            images: ["./img/sub4.png", './img/mc_squared.png']
+            date: "<span class='highlight'>???</span>, ??? @ 8PM ET",
+            title: "Let's ???",
+            subtitle: "???",
+            images: []
         },
         {
-            date: "Thursday, August 10th 2023 @ 8PM ET",
-            title: "Let's Watch POKéMON WORLDS!",
-            subtitle: "Kicking off a <span class='highlight'>whole weekend</span> of late-night commentary<br>with <span class='highlight'>Professor Tiberius</span> and <span class='highlight'>Lass PiaPiUFO</span>!",
-            images: ["./img/worlds.png", "./img/piapiufo_cropped.png", "./img/tiberius_cropped.png",]
-        },
-        {
-            date: "Friday, August 11th 2023 @ 8PM ET",
-            title: "Let's Watch POKéMON WORLDS!",
-            subtitle: "Continuing our coverage of POKéMON WORLDS 2023 with <span class='highlight'>Day 2 of Swiss</span>!<br>Who will make it to the <span class='highlight'>Grand Finals</span>?",
-            images: ["./img/worlds.png"]
-        },
-        {
-            date: "Sunday, August 13th 2023 @ 12AM ET",
-            title: "Let's Watch POKéMON WORLDS!",
-            subtitle: "It's time to find out who the world's <span class='highlight'>POKéMON MASTER</span> truly is!",
-            images: ["./img/worlds.png", "./img/trophy.png"]
+            date: "<span class='highlight'>Friday</span>, September 1st @ 8PM ET",
+            title: "Let's Collect Every Ribbon!",
+            subtitle: "Our ongoing quest to load Torkoal up with<br><span class='highlight'>every ribbon in the games</span> continues!",
+            images: ["./img/ribbons_transparent_short.png"]
         },
     ]
 }
